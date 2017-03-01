@@ -1,7 +1,81 @@
-          <h1>RLG Capital</h1>
+
+
+          <nav class="navbar navbar-default, style="color: #808c99" ">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <%= image_tag("logo.jpeg", :alt => "rss feed", :height =>"100", :width => "220", :align=> "left") %>
+                <!-- <a class="navbar-brand" href="#">Brand</a> -->
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul> -->
+                <!-- <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form> -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Approach<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to 'Overview', posts_path %></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Home</a></li>
+                  <li><%= link_to 'About us', about_home_path %></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><%= link_to 'Overview', posts_path %></li>
+                      <li role="separator" class="divider"></li>
+                      <li><%= link_to 'Alipine Air express', posts_path %></li>
+                      <li><%= link_to 'Geopower', new_posts_path %></li>
+                      <li><%= link_to 'Intellibed', show_posts_path %></li>
+                      <li><%= link_to 'Intervision System Technology', intervision_posts_path %></li>
+                      <li><%= link_to 'Mazer Encryption', mazer_posts_path %></li>
+                      <li><%= link_to 'Quantum IR Technologies', quantum_posts_path %></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <!-- <script>
+    $(document).ready(function(){
+    $('.carousel-content').slick();
+      prevArrow:"<img class='a-left control-c prev slick-prev' src='../images/shoe_story/arrow-left.png'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='../images/shoe_story/arrow-right.png'>"
+      });
+   </script> -->
+
 <iframe width="1240" height="560"  src="//www.youtube.com/embed/FeFdlku80ls?rel=0&autoplay=1"frameborder="0" allowfullscreen></iframe>
 
-<h1 style="padding-top: 150px;">Our proven investment approach has led to consistent and superior investment performance across varying economic cycles </h1>
+<h2 style="padding-top: 100px;">Helping Disruptive Innovators Succeed.
+Helping Disruptive Innovators Succeed.</h2>
+<p style="padding-top: 30px;">At RLG Capital, a Park City based private investment firm, we help disruptive innovators find the resources necessary to succeed.</p>
+
+<p>We acquire a controlling interest in privately held companies and bring the capital and leadership necessary to accelerate growth and profitability. We originate the deal, engage the right operating experts, secure the remaining capital, and work closely with our co-investors and with management to enhance enterprise value and achieve compelling returns.</p>
+
+<p style="padding-bottom: 200px;">We are an independent private equity sponsor with operating experience and access to capital through family offices and institutional investors. We believe our hands-on, collaborative sponsorship brings a new and needed approach to venture capital and private equity investing.</p>
 
 
 <script>
@@ -10,20 +84,35 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
 </script>
 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="padding-bottom: 200px;" "margin-top: 100px;">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="padding-bottom: 100px;" "margin-top: 50px;">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="https://gigaom.com/wp-content/uploads/sites/1/2012/09/robot-2.jpg" alt="...">
+    <div class="item active" alt="...">
+      <%= image_tag "alpine.jpeg", class: 'responsive-img rounded-border' %>
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item" alt="...">
+      <%= image_tag "geopower.jpeg", class: 'responsive-img rounded-border' %>
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="https://gigaom.com/wp-content/uploads/sites/1/2012/09/robot-2.jpg" alt="...">
+      <%= image_tag "intellibed.jpeg", class: 'responsive-img rounded-border' %>
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "mazer.jpeg", class: 'responsive-img rounded-border' %>
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "quantum.jpeg", class: 'responsive-img rounded-border' %>
       <div class="carousel-caption">
       </div>
     </div>
@@ -37,3 +126,15 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <%= image_tag("logo.jpeg", :alt => "rss feed", :height =>"50", :width => "0", :align=> "left") %>
+    <ol class="breadcrumb">
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About Us</a></li>
+     <li class="active">Contact Us</li>
+</ol>
+  </div>
+</nav>

@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
-  before_action require: :models
-	before_action :find_post, except: [:index, :new, :create]
+  skip_before_action :authenticate_model!
   def index
   	@posts = Post.all
     if params[:search]
@@ -45,9 +44,6 @@ class PostsController < ApplicationController
 
   private
 
-  	def post_params
-  		params.require(:pet).permit(:title, :author, :body)
-  	end
 
   	def find_post
   		@post = Post.find(params[:id])
