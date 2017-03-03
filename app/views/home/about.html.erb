@@ -1,1 +1,56 @@
-<h1>About Us</h1>
+<%= image_tag("logo.jpeg", :alt => "rss feed", :height =>"100", :width => "220", :align=> "left") %>
+<ul class="dropdown-menu">
+  <li><%= link_to 'Overview', posts_path %></li>
+</ul>
+<ul class="nav navbar-nav navbar-center">
+  <li><%= link_to 'Home', index_home_path %></li>
+  <li><%= link_to 'Managers', about_home_path %></li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><%= link_to 'Overview', posts_path %></li>
+      <li role="separator" class="divider"></li>
+      <li><%= link_to 'Alipine Air express', posts_path %></li>
+      <li><%= link_to 'Geopower', new_posts_path %></li>
+      <li><%= link_to 'Intellibed', show_posts_path %></li>
+      <li><%= link_to 'Intervision System Technology', intervision_posts_path %></li>
+      <li><%= link_to 'Mazer Encryption', mazer_posts_path %></li>
+      <li><%= link_to 'Quantum IR Technologies', quantum_posts_path %></li>
+    </ul>
+  </li>
+</ul>
+</div>
+</div>
+</nav>
+<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <%= image_tag("man.jpeg", :alt => "rss feed", :height =>"100%", :width => "100%") %>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <h2>Greg Robinson</h2>
+        <h3>Founder/Managing Partner</h3>
+        <p>Greg has over 30 years of business experience as a management consultant, entrepreneur, investment advisor, and private equity investor. </p>
+        <p>As a management consultant at Bain & Company, McKinsey & Company, Price Waterhouse and EHS Partners, he advised corporate clients on matters of strategic and operational significance to improve business performance and profitability. Working directly with CEOs, he helped develop and implement discrete revenue and cost initiatives that substantially increased sustainable earnings.</p>
+        <p>As a pre- and post-IPO executive at Staples, and in other entrepreneurial endeavors, he helped launch and lead companies in health care, education, business services, energy, and entertainment. </p>
+        <%= image_tag("Greg.jpeg", :alt => "rss feed", :height =>"300", :width => "320", :align=> "right") %>
+        <p>As a wealth advisor at Wells Fargo Private Bank, he helped family offices and other large clients deploy and diversify their investments. As a managing director at The CAPROCK Group, a multi-family office, he founded and led the Park City office and helped double the firm's assets under management to $3 billion.</p>
+        <p>Greg co-founded RLG Capital in November 2013, where he and Mark Lisonbee have invested in six portfolio companies. He currently serves on the boards of Mazer Encryption, Geopower Energy, Quantum IR Technologies, and InterVision Systems Technologies. </p>
+        <p>Greg has served in numerous church, civic, community and non-profit capacities. He was a National Finance Committee member for Romney For President (2008, 2012) and a Utah state delegate at the 2012 GOP Convention. He currently serves on the executive committee of the BYU Broadcasting Leadership Council and on the Advisory Boards of Progress Through Business and the Ethics Initiative at BYU's Wheatley Institution.</p>
+        <p>Greg earned a BA in English and French from Brigham Young University and an MBA from Harvard University, where he was a LeBaron-McArthur-Ellis Fellow. Married for 33 years, he and his wife Robin are the parents of four grown children.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <h2>MARK W. LISONBEE</h2>
+        <h3>Founder/Managing Partner</h3>
+        <p>During his 30+ year career, Mark has distinguished himself for his expertise in sourcing and executing growth equity and buyout deals.</p>
+        <p>As an entrepreneur and business owner, he co-founded and helped grow over a dozen startup companies. Six of them resulted in successful exits. His two most recent companies were acquired by Nutraceutical Corp, where he then worked as a marketing and business development executive helping negotiate and close the acquisitions of over twenty public and private companies.</p>
+        <p>Mark has been a leading figure in the natural products industry his entire career, with experience at the venture, growth, and buyout stages helping oversee profit and loss statements, product formulation, manufacturing, publishing, branding, and distribution. /p>
+          <%= image_tag("Mark.jpeg", :alt => "rss feed", :height =>"300", :width => "320", :align=> "right") %>
+        <p>As a management consultant, he helped United Airlines, Safeway, E-trade, Nutraceutical Corp, and others develop and implement customer loyalty programs. Mark's work at United Airlines helped revolutionize the frequent flyer industry by providing customers the opportunity to buy miles directly from the airline in order to qualify for award tickets.</p>
+        <p>Mark co-founded RLG Capital in November 2013, where he and Greg Robinson have invested in six portfolio companies to date. He currently serves on the boards of Mazer Encryption and Quantum IR Technologies. </p>
+        <p>Throughout Mark's professional career, he has served in church, community and non-profit capacities. He currently serves on the BYU Broadcasting Leadership Council.</p>
+        <p>Mark studied business management and marketing at Brigham Young University. Married for 33 years, he and his wife Terri have three grown children and one grandchild.</p>
+    </div>
+</div>

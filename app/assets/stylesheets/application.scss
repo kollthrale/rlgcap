@@ -29,16 +29,24 @@ h3 {
   color: black;
 }
  nav {
-   background-color: #808c99;
+   background-color: #F4F0F7;
    color: green;
  }
 
  body {
-   background-color: #808c99;
+   background-color: #F4F0F7;
    height: 100%;
    background-clip: url("//www.youtube.com/embed/FeFdlku80ls?rel=0&autoplay=1")
  }
 
+
+a {
+    color: green;
+    text-decoration: none;
+    font-size: x-large;
+    width: 200px;
+    align-content: center;
+}
  IMG.displayed {
      display: block;
      margin-left: auto;
@@ -47,7 +55,6 @@ h3 {
 img {
     display: block;
     margin: auto;
-    width: 40%;
 }
 iframe {
 
@@ -68,4 +75,91 @@ p {
     margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
+    color: black;
+    font-weight: bold;
+}
+
+
+// .btn-circle {
+//   width: 70px;
+//   height: 70px;
+//   margin-top: 15px;
+//   padding: 7px 16px;
+//   border: 2px solid black;
+//   border-radius: 100% !important;
+//   font-size: 40px;
+//   color: yellow;
+//   background: transparent;
+//   -webkit-transition: background 0.3s ease-in-out;
+//   -moz-transition: background 0.3s ease-in-out;
+//   transition: background 0.3s ease-in-out;
+// }
+// .btn-circle:hover,
+// .btn-circle:focus {
+//   outline: none;
+//   color: red;
+//   background: rgba(255, 255, 255, 0.1);
+// }
+// .btn-circle i.animated {
+//   -webkit-transition-property: -webkit-transform;
+//   -webkit-transition-duration: 1s;
+//   -moz-transition-property: -moz-transform;
+//   -moz-transition-duration: 1s;
+// }
+// .btn-circle:hover i.animated {
+//   -webkit-animation-name: pulse;
+//   -moz-animation-name: pulse;
+//   -webkit-animation-duration: 1.5s;
+//   -moz-animation-duration: 1.5s;
+//   -webkit-animation-iteration-count: infinite;
+//   -moz-animation-iteration-count: infinite;
+//   -webkit-animation-timing-function: linear;
+//   -moz-animation-timing-function: linear;
+// }
+// .btn {
+//   text-transform: uppercase;
+//   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   font-weight: 400;
+//   -webkit-transition: all 0.3s ease-in-out;
+//   -moz-transition: all 0.3s ease-in-out;
+//   transition: all 0.3s ease-in-out;
+//   border-radius: 0;
+// }
+// .btn-default {
+//   border: 1px solid #42DCA3;
+//   color: #42DCA3;
+//   background-color: transparent;
+// }
+// .btn-default:hover,
+// .btn-default:focus {
+//   border: 1px solid #42DCA3;
+//   outline: none;
+//   color: black;
+//   background-color: #42DCA3;
+// }
+
+// a {
+//   color: #42DCA3;
+//   -webkit-transition: all 0.2s ease-in-out;
+//   -moz-transition: all 0.2s ease-in-out;
+//   transition: all 0.2s ease-in-out;
+// }
+// a:hover,
+// a:focus {
+//   text-decoration: none;
+//   color: #1d9b6c;
+// }
+
+.parallax {
+    /* The image used */
+    background-image: url("manager.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

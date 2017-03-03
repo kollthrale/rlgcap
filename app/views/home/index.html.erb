@@ -1,6 +1,7 @@
-
-
-          <nav class="navbar navbar-default, style="color: #808c99" ">
+       <!-- adding a fixed makes the video follow in content -->
+   <div style="position: absolute; z-index: -99; width: 100%; height: 100%">
+     <iframe width="100%" height="560"  src="//www.youtube.com/embed/x3eIKSXXncc?rel=0&autoplay=1"frameborder="0" allowfullscreen></iframe>
+          <nav class="navbar navbar-default, style="color: #F4F0F7" ">
             <div class="container-fluid">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -9,9 +10,11 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <%= image_tag("logo.jpeg", :alt => "rss feed", :height =>"100", :width => "220", :align=> "left") %>
+
                 <!-- <a class="navbar-brand" href="#">Brand</a> -->
+               </div>
               </div>
+            </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!-- <ul class="nav navbar-nav">
                   <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
@@ -35,13 +38,14 @@
                   </div>
                   <button type="submit" class="btn btn-default">Submit</button>
                 </form> -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Approach<span class="caret"></span></a>
+                <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Approach<span class="caret"></span></a> -->
+                <%= image_tag("logo.jpeg", :alt => "rss feed", :height =>"100", :width => "220", :align=> "left") %>
                 <ul class="dropdown-menu">
                   <li><%= link_to 'Overview', posts_path %></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">Home</a></li>
-                  <li><%= link_to 'About us', about_home_path %></li>
+                  <li><%= link_to 'Managers', about_home_path %></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -66,8 +70,52 @@
       nextArrow:"<img class='a-right control-c next slick-next' src='../images/shoe_story/arrow-right.png'>"
       });
    </script> -->
+   <li style="padding-top: 460px"></li>
+   <a href="#about">
+       <%= image_tag("arrow.jpeg", :alt => "rss feed", :height =>"30", :width => "80" ) %>
+       <i class="fa fa-angle-double-down animated"></i>
+   </a>
+<li style="padding-top: 0px"></li>
+<script>
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
 
-<iframe width="1240" height="560"  src="//www.youtube.com/embed/FeFdlku80ls?rel=0&autoplay=1"frameborder="0" allowfullscreen></iframe>
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+$('.navbar-collapse ul li a').click(function() {
+    $(this).closest('.collapse').collapse('toggle');
+});
+</script>
+
+
+
+<!-- <header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2"> -->
+                    <!-- <h1 class="brand-heading">Grayscale</h1>
+                    <p class="intro-text">A free, responsive, one page Bootstrap theme.
+                        <br>Created by Start Bootstrap.</p> -->
+
+                    <!-- <a href="#about" class="btn btn-circle page-scroll">
+                        <%= image_tag("arrow.jpeg", :align=> "right", :alt => "rss feed", :height =>"30", :width => "80" ) %>
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a> -->
+                <!-- </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+
 
 <h2 style="padding-top: 100px;">Helping Disruptive Innovators Succeed.
 Helping Disruptive Innovators Succeed.</h2>
@@ -78,12 +126,36 @@ Helping Disruptive Innovators Succeed.</h2>
 <p style="padding-bottom: 200px;">We are an independent private equity sponsor with operating experience and access to capital through family offices and institutional investors. We believe our hands-on, collaborative sponsorship brings a new and needed approach to venture capital and private equity investing.</p>
 
 
+  <%= image_tag("manager.jpeg", :alt => "rss feed", :height =>"80", :width => "300" ) %>
 <script>
 $('#myCollapsible').on('hidden.bs.collapse', function () {
 })
 </script>
 
+<section id="" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>INVESTMENT CRITERIA</h2>
+            <p>Characteristics. We look for companies with proven business models, strong market potential, sustainable competitive advantages, and products or services that are disruptive to their industry -- companies that solve problems and satisfy demand through superior innovation, creativity, economics and execution. </p>
+            <p>Size. We look for companies with EBITDA of $5-15 million or with an enterprise value of $20 to $100 million.</p>
+            <p>Sectors. We invest in the sectors where our team has deep experience and has previously invested with success. Those sectors include aerospace, business services, consumer products, education, energy, entertainment, health, media, technology, and transportation.</p>
+            <p>Location. We look for companies with a connection to Utah and the Mountain West, though we invest wherever we find the best opportunities.</p>
+            <p>Amount. We look to invest a minimum of $5mm for a controlling interest in the voting shares of the company.</p>
+            <p>Tenure. We typically hold our investments for a minimum of three years, actively working with management to execute our growth strategy until we accomplish a successful exit.</p>
+            <p>Returns. We look for investments that we believe can reasonably achieve a minimum IRR of 25%.</p>
+        </div>
+    </div>
+</section>
 
+<section id="about" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>WHAT WE LOOK FOR</h2>
+            <p>At RLG Capital, we look for companies with proven business models, strong market potential, and sustainable competitive advantages. Once we find them, we believe that smart, properly structured Reinvestment capital + experienced, properly focused Leadership = business Growth and profitability.</p>
+            <p>We are private equity sponsor with access to billions in investment capital through our proprietary relationships with family offices, multi-family office firms, and investment funds.</p>
+        </div>
+    </div>
+</section>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="padding-bottom: 100px;" "margin-top: 50px;">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -134,7 +206,9 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
     <ol class="breadcrumb">
      <li><a href="#">Home</a></li>
      <li><a href="#">About Us</a></li>
-     <li class="active">Contact Us</li>
+     <li><a href="#">Contact Us</li>
 </ol>
+
+
   </div>
 </nav>
